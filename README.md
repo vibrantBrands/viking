@@ -1,2 +1,2 @@
 # viking
-C5 Theme for Viking Site
+C5 theme for Viking

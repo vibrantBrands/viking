@@ -1,0 +1,155 @@
+
+.homepage {
+	text-align: center;
+
+	.container {
+		margin: 40px auto;
+	}
+
+	.hero {
+		background-size: cover;
+		margin-top: 90px;
+		text-align: left;
+		width: 100%;
+
+		@media screen and (max-width: $lg-breakpoint) {
+            margin-top: 0;
+            padding-top: 0;
+        }
+
+		img {
+			height: auto;
+			width: 100%;
+		}
+
+		@media screen and (max-width: $lg-breakpoint) {
+            background-position: -250px 0;
+        }
+        @media screen and (max-width: $md-breakpoint) {
+            background-position: -400px 0;
+            padding-top: 60px;
+        }
+
+        .mobile {
+        	display: none;
+
+        	@media screen and (max-width: $lg-breakpoint) {
+	            display: block;
+	        }
+        }
+
+        .desktop {
+        	@media screen and (max-width: $lg-breakpoint) {
+	            display: none;
+	        }
+        }
+
+		h1 {
+			color: $dark-blue;
+			font-size: 45px;
+			line-height: 1.1em;
+			max-width: 550px;
+
+			@media screen and (max-width: $lg-breakpoint) {
+	            max-width: 450px;
+	        }
+
+			@media screen and (max-width: $md-breakpoint) {
+				max-width: 350px;
+	            font-size: 45px;
+	        }
+		}
+	}
+
+	.careers {
+		background: url('../img/icon-bg.png') repeat;
+		background-size: cover;
+		padding: 40px 0;
+
+		p {
+			color: $white;
+		}
+
+		.container {
+			text-align: center;
+			//padding: 0 5%;
+		}
+	}
+
+	.icons {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 40px;
+
+		a {
+			text-decoration: none;
+
+			p {
+				text-decoration: none;
+			}
+		}
+
+		@include flex-col-layout($md-breakpoint);
+
+		@media screen and (max-width: $xl-breakpoint) {
+	        width: 95%;
+	    }
+
+		div {
+			align-self: center;
+		}
+
+		img {
+			align-self: center;
+			max-height: 130px;
+			width: auto;
+		}
+		p {
+			color: $white;
+			font-size: 1.3em;
+			margin-top: 20px;
+			text-align: center;
+		}
+	}
+
+	.mobile {
+
+		>h2 {
+			color: $gray;
+		}
+	}
+
+	.video {
+		
+		a {
+			text-decoration: none;
+		}
+		.container {
+
+			>img {
+				width: 100%;
+			}
+
+			.playbar {
+				display: flex;
+				margin-top: -57px;
+
+				.text {
+					background: rgba(255, 164, 47, .6);
+					display: flex;
+					align-items: center;
+					justify-content: flex-start;
+					color: $white;
+					font-size: 2em;
+					flex: 1 1 0;
+					padding-left: 30px;
+				}
+			}
+		}
+	}
+
+	.change {
+		margin-top: 100px;
+	}
+}

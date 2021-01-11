@@ -1,0 +1,71 @@
+.internal_wrapper {
+	margin-top: 130px;
+	text-align: center;
+	width: 100%;
+
+	.page-content {
+		padding-top: 40px;
+		margin: 0 auto;
+		max-width: 900px;
+		text-align: left;
+	}
+
+	.callouts {
+		display: flex;
+		justify-content: space-between;
+		margin: 30px 0;
+
+		span {
+			color: $orange;
+			font-weight: normal;
+			font-size: 3.5em;
+		}
+
+		h2 {
+			color: $dark-blue;
+			font-size: 38px;
+		}
+
+		>div {
+			border: 1px solid $orange;
+			text-align: center;
+			width: 47%;
+		}
+	}
+
+	.roi-calculator {
+		font-family: $secondary-font;
+		font-size: 1.5em;
+		padding: 50px 0;
+
+		.submit {
+			background: $dark-blue;
+			color: $orange;
+			font-family: $base-font;
+			font-size: 24px;
+			margin: 30px auto 0;
+			text-decoration: none;
+			text-transform: uppercase;
+			transition: $menu-transition;
+			padding: 15px 40px;
+
+			&:hover {
+				background: $orange;
+				color: $white;
+			}
+		}
+
+		.answer {
+			border: 3px solid $orange;
+			display: none;
+			margin-top: 50px;
+			padding: 40px;
+
+			span {
+				color: $orange;
+				font-size: 3em;
+			}
+		}
+	}
+
+}

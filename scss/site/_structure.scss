@@ -1,0 +1,187 @@
+body {
+	/** {
+    	border: 1px solid black;
+	}*/
+}
+
+h1 {
+	color: $dark-blue;
+	font-size: 45px;
+}
+
+h2 {
+	color: $orange;
+	font-size: 38px;
+	margin-top: 30px;
+
+	&.gray {
+		color: $gray;
+	}
+}
+
+h3 {
+	color: $orange;
+	margin-top: 20px;
+}
+
+p, ul {
+	font-family: $secondary-font;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 1.4em;
+	margin: 15px 0;
+}
+
+ul {
+	padding-left: 20px;
+	list-style-type: disc;
+	text-align: left;
+}
+
+.container {
+	max-width: $content-max-width;
+	text-align: left;
+
+	>div {
+		//padding: 0 2%;
+	}
+
+	@media screen and (max-width: $md-breakpoint) {
+		padding: 0 5%;
+	}
+
+	@media screen and (max-width: $lg-breakpoint) {
+        text-align: center;
+
+        p {
+        	text-align: left;
+        }
+    }
+}
+
+.btn {
+
+	a {
+		background: $dark-blue;
+		color: $orange;
+		font-family: $base-font;
+		font-size: 24px;
+		text-decoration: none;
+		text-transform: uppercase;
+		transition: $menu-transition;
+		padding: 15px 40px;
+
+		&:hover {
+			background: $orange;
+			color: $white;
+		}
+	}
+
+
+	&.gray {
+
+		a {
+			background: $gray;
+			color: $white;
+
+			&:hover {
+				background: $orange;
+			}
+		}
+	}
+
+	&.orange {
+
+		a {
+			background: $orange;
+			color: $white;
+
+			&:hover {
+				background: $dark-blue;
+				color: $orange;
+			}
+		}
+	}
+
+	&.clear {
+
+		a {
+			background: none;
+			border: $white 1px solid;
+			color: $white;
+
+			&:hover {
+				background: $dark-blue;
+				color: $orange;
+			}
+		}
+	}
+}
+
+
+.two-column {
+	display: flex;
+
+	@include flex-col-layout();
+
+	h2 {
+		margin: 30px 0 20px;
+	}
+
+	>div {
+		margin: 0 auto;
+		padding: 30px;
+		width: 50%;
+
+		@include mobile-full-width();
+	}
+
+	span {
+		display: flex;
+	}
+
+	.image-box {
+		width: 40%;
+	}
+}
+
+.scroller {
+	margin-bottom: 0 !important;
+	width: 100%;
+	overflow-x: hidden;
+
+	.slick-dots {
+		bottom: 20px;
+	}
+
+	.slick-slide {
+		position: relative;
+	}
+
+	.btn {
+		bottom: 80px;
+		display: flex;
+		left: 60%;
+		position: absolute;
+
+		@media screen and (max-width: $lg-breakpoint) {
+			bottom: 30px;
+    	}
+    	@media screen and (max-width: $md-breakpoint) {
+			bottom: 20px;
+    	}
+
+    	a {
+    		display: flex;
+
+    		@media screen and (max-width: $md-breakpoint) {
+    			font-size: 18px;
+				padding: 3px;
+	    	}
+    	}
+	}
+}
+
+iframe {
+	width: 100% !important;
+}
