@@ -1,71 +1,288 @@
 .internal_wrapper {
-	margin-top: 130px;
-	text-align: center;
-	width: 100%;
 
 	.page-content {
-		padding-top: 40px;
-		margin: 0 auto;
-		max-width: 900px;
-		text-align: left;
+		background: $gray-bg;
+		margin-top: 130px;
+
+		@media screen and (max-width: $lg-breakpoint) {
+	        margin: 0;
+	        //padding-top: 50px;
+	    }
+
+	   	a {
+	    	color: $header-gray;
+	    	font-size: 1.5em;
+	    	font-weight: bold;
+	    	margin-top: 20px;
+	    	text-decoration: none;
+	    	text-transform: uppercase;
+	    }
+
+	    &.case-study {
+
+	    	.hero {
+	    		min-height: 400px;
+	    		align-items: flex-end;
+
+	    		h1, p {
+	    			color: $white;
+	    			margin: 5px 0;
+	    			text-align: left;
+	    			width: 100%;
+	    		}
+	    		p {
+	    			font-size: 24px;
+	    		}
+	    	}
+
+	    	.primarytext {
+	    		background: url(../img/background-3.png) no-repeat;
+	    		background-size: cover;
+	    	}
+
+	    	.case-study-nav {
+	    		background: $black;
+	    		color: $white;
+
+	    		a {
+	    			color: $white;
+	    			font-size: 20px;
+	    		}
+
+	    		.container {
+	    			padding: 10px 0;
+	    		}
+	    	}
+	    }
+
 	}
-
-	.callouts {
-		display: flex;
-		justify-content: space-between;
-		margin: 30px 0;
-
-		span {
-			color: $orange;
-			font-weight: normal;
-			font-size: 3.5em;
-		}
+	
+	.steps {
+		padding: 0 0 50px 0;
 
 		h2 {
-			color: $dark-blue;
-			font-size: 38px;
+			color: $header-gray;
+			margin-top: 50px;
+		}
+		>div {
+			flex-direction: column;
+			justify-content: flex-start;
+		}
+	}
+
+	.maintext {
+		background: $gray-bg;
+
+		.container {
+			flex-direction: column;
+
+			h4 {
+				color: $black;
+				font-weight: 600;
+				margin: 20px 0 0;
+				text-align: left;
+			}
+
+			p {
+				color: $brown;
+				margin: 0;
+			}
+		}
+	}
+
+	.contact-box {
+		background: url('../img/solutions/contact-bg.jpg') no-repeat;
+		background-size: cover;
+		padding: 50px 0;
+		text-align: center;
+
+		p {
+			color: $white;
+			font-size: 50px;
+			text-transform: uppercase;
+			font-weight: 400;
+
+			span {
+				font-weight: bold;
+			}
+		}
+	}
+
+	.testimonials {
+		background: $black;
+
+		.grid {
+
+			>div {
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				margin-right: 30px;
+				flex: 1 1 0;
+
+				p {
+					color: $white;
+				}
+
+				.picture {
+					align-items: center;
+					display: flex;
+					justify-content: center;
+					min-height: 360px;
+					width: 100%;
+				}
+
+				&:first-child {
+					.picture {
+						background: url('../img/solutions/testimonial-preview-1.png') no-repeat;
+						background-position: center;
+						background-size: cover;
+					}
+				}
+				&:nth-child(2) {
+					.picture {
+						background: url('../img/solutions/testimonial-preview-2.png') no-repeat;
+						background-size: cover;
+					}
+				}
+				&:nth-child(3) {
+					.picture {
+						background: url('../img/solutions/testimonial-preview-3.png') no-repeat;
+						background-size: cover;
+					}
+				}
+			}
+		}
+	}
+
+	.testimonials {
+		background: url('../img/solutions/stripe-line-graphic.png') $black no-repeat;
+		background-size: cover;
+		background-position: left;
+	}
+
+	.accolades {
+		color: $white;
+		text-align: center;
+
+		.awards {
+			p {
+				margin: 3px 0 0 0;
+			}
 		}
 
 		>div {
-			border: 1px solid $orange;
-			text-align: center;
-			width: 47%;
-		}
-	}
-
-	.roi-calculator {
-		font-family: $secondary-font;
-		font-size: 1.5em;
-		padding: 50px 0;
-
-		.submit {
-			background: $dark-blue;
-			color: $orange;
-			font-family: $base-font;
-			font-size: 24px;
-			margin: 30px auto 0;
-			text-decoration: none;
-			text-transform: uppercase;
-			transition: $menu-transition;
-			padding: 15px 40px;
-
-			&:hover {
-				background: $orange;
-				color: $white;
-			}
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
 		}
 
-		.answer {
-			border: 3px solid $orange;
-			display: none;
-			margin-top: 50px;
-			padding: 40px;
+		h2 {
+			color: $white;
+			font-size: 38px;
+			line-height: 1.3em;
 
 			span {
-				color: $orange;
-				font-size: 3em;
+				font-size: 45px;
+			}
+		}
+
+		.marks {
+			p {
+				font-size: 30px;
+				text-align: center;
+				text-transform: uppercase;
 			}
 		}
 	}
 
+	.hero {
+		background-size: cover;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 600px;
+
+		.container {
+			align-items: center;
+			flex-direction: column;
+			width: 100%;
+		}
+
+		h1, h2 {
+			color: $white;
+			text-align: center;
+		}
+
+		h2 {
+			text-transform: none;
+			line-height: 1.3em;
+			width: 60%;
+
+			@media screen and (max-width: $lg-breakpoint) {
+			    width: 90%;
+			}
+		}
+	}
+
+	.product-description {
+		background: url('../img/solutions/contact-bg.jpg') no-repeat;
+		background-size: cover;
+		color: $white;
+		padding: 50px 0;
+
+		h1, h2, h3, h4 {
+			color: $white;
+		}
+	}
+
+	.product-section {
+		background: url(../img/background-3.png) no-repeat;
+		background-size: cover;
+		font-weight: bold;
+		max-height: 450px;
+		overflow-y: hidden;
+
+		h1, h2, h3, h4 {
+			text-align: left;
+		}
+
+		h2 {
+			color: $brown;
+		}
+
+		.two-column {
+
+			h1, h2, h3, h4 {
+				text-align: right;
+				width: 80%;
+				padding-right: 10%;
+
+				@media screen and (max-width: $lg-breakpoint) {
+			        padding: 0;
+			    }
+			}
+			h2 {
+				color: $off-black;
+				font-size: 35px;
+				padding-top: 100px;
+
+				@media screen and (max-width: $lg-breakpoint) {
+			        padding: 0;
+			    }
+			}
+			>div {
+				display: flex;
+				flex-direction: column;
+				text-align: right;
+			}
+		}
+
+		@media screen and (max-width: $lg-breakpoint) {
+	        max-height: none;
+	    }
+
+		
+	}
 }

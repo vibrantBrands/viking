@@ -1,19 +1,22 @@
 
 
 // Fonts
-$base-font: 'Oswald', sans-serif;
-$secondary-font: 'Prompt', sans-serif;
+$base-font: 'Poppins', sans-serif;
+$secondary-font: 'Poppins', sans-serif;
 $font-stack-system: $base-font;
 
 // Colors 
 
 $black: #000;
 $white: #fff;
-$orange: #ffa42f;
-$dark-blue: #2b3b51;
+$brown: #872f01;
 $gray: #c7c7c7;
-$dark-gray: darken($gray, 5%);
+$gray-bg: #eaeaea;
+$header-gray: #636261;
 $footer-bg: #2f455f;
+$off-black: #1A1A1A;
+$dark-gray: #323232;
+
 
 // Menu 
 

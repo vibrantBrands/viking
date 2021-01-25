@@ -1,0 +1,152 @@
+.internal_wrapper {
+
+	.page-template-grpp,
+	.page-template-grpp-nohero {
+
+		.page-content {
+			//margin-top: 180px;
+		}
+
+		header {
+			.navigation{
+				padding: 20px 0;
+			}
+		}
+
+		.hero {
+			.container {
+				align-items: flex-start;
+
+				h1, h2 {
+					text-align: left;
+					text-shadow: #000 1px 0 10px;
+				}
+			}
+
+			background-position: right !important;
+
+			@media screen and (max-width: $lg-breakpoint) {
+					background-position: -900px 0 !important;
+			}
+			@media screen and (max-width: $md-breakpoint) {
+					background-position: -1100px 0 !important;
+			}
+		}
+
+		.gray-box {
+			background: $off-black;
+			
+			.container {
+				padding: 30px;
+			}
+
+			h1,h2 {
+				color: $white;
+				margin-top: 50px;
+				text-align: left;
+				width: 100%;
+			}
+
+			p {
+				color: $white;
+				margin-bottom: 50px;
+			}
+		}
+
+		.maintext {
+			background: url('../img/background-3.png') no-repeat;
+			background-size: cover;
+			background-position: center bottom;
+
+			/*.two-column {
+				>div {
+					&:first-child {
+						width: 60%;
+					}
+					&:nth-child(2) {
+						width: 40%;
+					}
+				}
+			}*/
+
+			.container {
+				h2 {
+					font-weight: 800;
+				}
+
+				p {
+					color: $black;
+				}
+			}
+		}
+
+		.brown-bg {
+			background: url('../img/solutions/contact-bg.jpg') no-repeat;
+			background-size: cover;
+			padding: 50px 0;
+
+			h3 {
+				color: $white;
+				text-align: center;
+				font-size: 50px;
+				font-weight: bold;
+				margin-bottom: 0;
+			}
+
+			.container {
+				align-items: center;
+				justify-content: center;
+
+				.grid {
+
+					>div {
+						display: flex;
+						flex-direction: column;
+
+						@media screen and (max-width: $lg-breakpoint) {
+					        margin-top: 40px;
+					    }
+					}
+
+					h3 {
+						color: $white;
+						margin: 20px 0 10px;
+						font-weight: 600;
+					}
+
+					p {
+						color: $white;
+						text-transform: uppercase;
+						margin-top: 0;
+					}
+				}
+			}
+		}
+
+		.bottom-content {
+			background: url('../img/grpp/stripe-line-graphic.png') no-repeat;
+			background-size: 50%;
+
+			.grid {
+
+				a {
+					align-items: center;
+					background: $off-black;
+					color: $white;
+					display: flex;
+					font-size: 20px;
+					font-weight: normal;
+					justify-content: center;
+					margin-right: 10px;
+					padding: 30px 0;
+					text-transform: none;
+					text-align: center;
+				}
+
+				@media screen and (max-width: $lg-breakpoint) {
+					margin-top: 0px;
+				}
+			}
+		}
+	}
+}

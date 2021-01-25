@@ -1,15 +1,17 @@
 // Header styles fof the Vibrant rebrand //
 
 header {
-	background: $white;
-	border-bottom: 1px solid $dark-blue;
+	background: $black;
+	border-top: 15px solid $brown;
+	box-shadow: 0px 7px 11px -8px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0px 7px 11px -8px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 7px 11px -8px rgba(0,0,0,0.75);
 	position: fixed;
 	top: 0;
 	width: 100%;
 	z-index: 100;
 
 	@media only screen and (max-width: $md-breakpoint) {
-		height: 180px;
 		position: relative;
 	}
 
@@ -24,7 +26,6 @@ header {
 	.navigation {
 		align-items: center;
 		font-weight: bold;
-		background: $white;
 		display: flex;
 		font-size: 1.3em;
 		justify-content: space-between;
@@ -35,10 +36,7 @@ header {
 		z-index: 3;
 
 		@media only screen and (max-width: $md-breakpoint) {
-			flex-direction: column;
 			justify-content: center;
-			//min-height: 110px;
-			padding: 0;
 		}
 
 		.button-wrapper {
@@ -51,15 +49,6 @@ header {
 
 		.logo {
 			margin-left: 50px;
-
-			img {
-				width: 270px;
-			}
-
-			@media only screen and (max-width: $md-breakpoint) {
-				margin-top: 30px;
-				max-width: 200px;
-			}
 		}
 
 		>div {
@@ -78,7 +67,7 @@ header {
 			width: 30px;
 			height: 26px;
 			position: relative;
-			margin: -12px 0 0 20px;
+			margin-top: -20px;
 			z-index: 5;
 
 			@media only screen and (min-width: $md-breakpoint) {
@@ -86,7 +75,7 @@ header {
 			}	
 
 			p {
-				color: $dark-blue;
+				color: $white;
 				font-size: 0.6em;
 				margin: 25px 0 0 -1px;
 			}
@@ -104,7 +93,7 @@ header {
 			}
 
 			.bar {
-				background: $dark-blue;
+				background: $white;
 				display: block;
 				height: 2px;
 				position: absolute;
@@ -168,7 +157,7 @@ header {
             display: flex;
             font-weight: 700;
             justify-content: flex-end;
-            margin-bottom: 0;
+            margin: 0;
             padding-left: 0;
             text-align: right;
             z-index: 10;
@@ -179,13 +168,13 @@ header {
 
             @media screen and (max-width: $md-breakpoint) {
                 align-items: flex-end;
-                background: $dark-blue;
+                background: $black;
                 display: none;
                 font-size: 16px;
                 left: 0;
+                top: 130px;
                 min-height: 1000px;
                 position: fixed;
-                top: 80px;
                 width: 100%;
             }
 
@@ -196,8 +185,9 @@ header {
             }
 
             >li {
-                color: $dark-blue;
+                color: $white;
                 display: flex;
+                font-weight: normal;
                 flex-direction: column;
                 justify-content: flex-start;
                 margin: 0 3px 0;
@@ -206,6 +196,7 @@ header {
                 text-decoration: none;
 
                 a {
+                	color: $white;
                 	text-decoration: none;
                 }
 
@@ -220,9 +211,9 @@ header {
                     z-index: 2;
 
                     >.nav-item {
-                    	//background: $dark-blue;
+                    	//background: $black;
 						/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#36a6dc+0,36a6dc+47,36a6dc+47,3667b1+47,3667b1+100 */
-						background: $dark-blue; /* Old browsers */
+						background: $black; /* Old browsers */
 						transition: all .2s ease-out;
                     	border-top: 0;
                     	border: $white 1px solid;
@@ -230,10 +221,10 @@ header {
                     	position: relative;
 
                     	&:hover {
-                    		background: #edf6ff;
+                    		background: $black;
 
                 			a {
-                				color: $dark-blue;
+                				color: $black;
                 				display: block;
                 				height: 100%;
                 				width: 100%;
@@ -253,10 +244,10 @@ header {
                     		border: 0;
 
                     		&:hover {
-                    			background: $dark-blue;
+                    			background: $black;
                  				
                  				a {
-                 					color: $dark-blue;
+                 					color: $white;
                  				}
                     		}
                     	}
@@ -298,7 +289,7 @@ header {
 
 
                 @media screen and (max-width: $md-breakpoint) {
-                    background: $dark-blue;
+                    background: $black;
                     border-bottom: 1px solid white;
                     font-size: 1.2em;
                     height: auto;

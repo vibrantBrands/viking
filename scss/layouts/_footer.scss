@@ -1,154 +1,74 @@
 
 footer {
-	background: $footer-bg;
-	clear: both;
-	text-align: center;
-	padding: 20px 0;
-
-	.orange-ctas {
-		background: url('../img/orange-bg.png') $footer-bg;
-		background-size: cover;
-		text-align: center;
-		padding: 50px 0;
-
-		h2, p {
-			color: $white;
-			text-align: center;
-		}
-
-		h2 {
-			margin: 0 auto;
-		}
-		p {
-			margin: 10px 0 50px;
-		}
-
-		.btn-wrapper {
-			justify-content: center;
-			display: flex;
-
-			@include flex-col-layout();
-
-			span {
-				margin: 0 10px;
-
-				@media screen and (max-width: $lg-breakpoint) {
-					margin-top: 50px;
-				}
-			}
-
-			.blue {
-
-				&:hover {
-					
-					a {
-						background: none;
-						border: 1px solid $white;
-					}
-				}
-			}
-		}
-	}
-
-	.bottombar {
-		align-items: center;
-		background: $footer-bg;
-		color: $white;
-		display: flex;
-		font-family: $secondary-font;
-		justify-content: space-between;
-		padding: 40px 0;
-
-		@media screen and (max-width: $lg-breakpoint) {
-			align-items: center;
-			flex-direction: column;
-			justify-content: center;
-		}
-
-		>div {
-
-			@media screen and (max-width: $lg-breakpoint) {
-				margin: 20px auto;
-			}
-		}
-
-		.logo {
-			margin-left: 30px;
-
-			@media screen and (max-width: $lg-breakpoint) {
-				margin: 0;
-			}
-
-			img {
-				max-width: 250px;
-			}
-		}
-
-		.apps {
-			display: flex;
-			font-size: 3.4em;
-
-			>div {
-				margin: 0 20px;
-
-				a {
-					color: $white;
-				}
-			}
-
-			@include flex-col-layout();
-
-			img {
-				align-self: center;
-				max-width: 150px;
-				margin: 0 5px;
-
-				@media screen and (max-width: $lg-breakpoint) {
-					margin: 10px 0;
-				}
-			}
-		}
-
-		.social {
-
-			.fab {
-				color: $white;
-				font-size: 2em;
-				margin: 0 10px;
-			}
-		}
-
-		.contact {
-			display: flex;
-			flex-direction: column;
-			margin-right: 30px;
-			text-align: left;
-
-			@media screen and (max-width: $lg-breakpoint) {
-				margin: 0;
-			}
-
-			.fa {
-				margin-right: 5px;
-			}
-
-			a {
-				color: $white;
-				margin-bottom: 8px;
-				text-decoration: none;
-
-				&:hover {
-					text-decoration: underline;
-				}
-			}
-		}
-	}
-
-	.logo img {
-		width: 200px;
-	}
+	background: black;
+	border-bottom: 15px solid $brown;
+	color: white;
+	padding-bottom: 50px;
 
 	.container {
 		margin: 0 auto;
+		text-align: left;
+		font-size: 12px;
+
+		&:first-child {
+			border-bottom: 1px solid $white;
+		}
+
+		@media only screen and (max-width: $lg-breakpoint) {
+	        align-items: center;
+	        flex-direction: column;
+	    }
+
+		h2 {
+			color: $white;
+			font-size: 16px;
+			margin: 0;
+		}
+
+		p {
+			font-size: 16px;
+			margin-bottom: 10px;
+		}
+
+		a {
+			color: $white;
+			font-size: 16px;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+		>div {
+			justify-content: flex-start;
+			width: 18%;
+
+			&.social {
+				display: flex;
+				justify-content: space-between;
+				margin-bottom: 30px;
+			}
+
+			&:nth-child(2) {
+				width: 25%;
+
+				@media only screen and (max-width: $lg-breakpoint) {
+		        	width: 70%;
+		    	}
+			}
+
+			@media only screen and (max-width: $lg-breakpoint) {
+	        	width: 70%;
+	    	}
+		}
+
+		p {
+			margin: 0;
+
+			&.copyright {
+				margin-top: 40px;
+			}
+		}
 	}
 }

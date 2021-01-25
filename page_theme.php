@@ -1,5 +1,5 @@
 <?php
-namespace Application\Theme\taliho;
+namespace Application\Theme\viking;
 
 use Concrete\Core\Area\Layout\Preset\Provider\ThemeProviderInterface;
 use Concrete\Core\Page\Theme\Theme;
@@ -16,7 +16,7 @@ class PageTheme extends Theme implements ThemeProviderInterface
 
     public function getThemeName()
     {
-        return t('Taliho');
+        return t('Viking');
     }
 
     public function getThemeDescription()
@@ -91,10 +91,8 @@ class PageTheme extends Theme implements ThemeProviderInterface
     public function getThemeEditorClasses()
     {
         return [
-            ['title' => t('Gray Header'), 'menuClass' => '', 'spanClass' => 'gray', 'forceBlock' => '1'],
-            ['title' => t('Orange Button'), 'menuClass' => '', 'spanClass' => 'orange btn', 'forceBlock' => '1'],
-            ['title' => t('Gray Button'), 'menuClass' => '', 'spanClass' => 'gray btn', 'forceBlock' => '1'],
-            ['title' => t('Clear Button'), 'menuClass' => '', 'spanClass' => 'clear btn', 'forceBlock' => '1'],
+            ['title' => t('Brown Button'), 'menuClass' => '', 'spanClass' => 'brown btn', 'forceBlock' => '-1'],
+            ['title' => t('Unbold'), 'menuClass' => '', 'spanClass' => 'unbold', 'forceBlock' => '-1'],
         ];
     }
 

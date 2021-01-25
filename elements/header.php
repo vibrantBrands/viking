@@ -10,7 +10,7 @@ $displayThirdColumn = $blocks > 0 || $c->isEditMode();
   <header>
     <div class="navigation">
       <!-- mobile menu -->
-      <!-- <div class="toggle-wrapper">
+      <div class="toggle-wrapper">
         <div class="menu-toggle inactive">
           <div class="bar"></div>
           <div class="bar"></div>
@@ -18,13 +18,15 @@ $displayThirdColumn = $blocks > 0 || $c->isEditMode();
           <span class="bg"></span>
         </div>
         <p>MENU</p>
-      </div> -->
+      </div>
 
       <div class="logo">
-        <a href="/"><img src="<?php echo $this->getThemePath(); ?>/img/logo.svg" alt="Taliho Logo"></a>
+        <a href="/">
+          <img src="<?php echo $this->getThemePath(); ?>/img/logo-2.png" alt="logo" class="logo">
+        </a>
       </div>
-      <div class="button-wrapper">
-        <!-- <?php   
+      <div>
+        <?php   
               $bt = BlockType::getByHandle('autonav');
               $bt->controller->displayPages = 'top'; // 'top', 'above', 'below', 'second_level', 'third_level', 'custom', 'current'
               //$bt->controller->displayPagesCID = ''; // if display pages is set ‘custom’
@@ -34,8 +36,6 @@ $displayThirdColumn = $blocks > 0 || $c->isEditMode();
               $bt->controller->displaySubPageLevelsNum = '0'; // if displaySubPages is set 'custom'
               $bt->render('templates/main_nav'); // for template 'templates/template_name';
               ?> 
-            <span class="btn orange"><a href="/roi-calculator">Roi Calculator</a></span> -->
-            <span class="btn"><a href="/contact-us">Contact Us</a></span>
             
           </div>
     </div>

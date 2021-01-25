@@ -43,6 +43,6 @@
 
     
 </head>
-<body class='apff <?php if ($po->isHome()) { echo "home_wrapper"; } else {echo "internal_wrapper"; }  ?>'>
+<body class='<?php if ($po->isHome()) { echo "home_wrapper"; } else {echo "internal_wrapper"; }  ?>'>
 
 <div class="<?php echo $c->getPageWrapperClass()?>">

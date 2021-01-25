@@ -2,28 +2,38 @@
 .homepage {
 	text-align: center;
 
-	.container {
-		margin: 40px auto;
-	}
-
 	.hero {
+		align-items: flex-end;
+		background: url('../img/home/hero-image.jpg') no-repeat;
 		background-size: cover;
-		margin-top: 90px;
-		text-align: left;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		margin: 85px auto 0;
+		min-height: 700px;
+		padding: 0 5% 50px 0;
+		text-align: center;
+		text-transform: uppercase;
 		width: 100%;
 
-		@media screen and (max-width: $lg-breakpoint) {
-            margin-top: 0;
-            padding-top: 0;
-        }
+		h1, h2 {
+			color: $white;
+			max-width: 700px;
+			text-align: right;
+		}
 
-		img {
-			height: auto;
-			width: 100%;
+		.container {
+			align-items: flex-end;
+			border: 1px solid $white;
+			flex-direction: column;
+			height: 100%;
+			justify-content: flex-end;
+			width: 100%;	
 		}
 
 		@media screen and (max-width: $lg-breakpoint) {
             background-position: -250px 0;
+            margin: 0;
         }
         @media screen and (max-width: $md-breakpoint) {
             background-position: -400px 0;
@@ -43,22 +53,6 @@
 	            display: none;
 	        }
         }
-
-		h1 {
-			color: $dark-blue;
-			font-size: 45px;
-			line-height: 1.1em;
-			max-width: 550px;
-
-			@media screen and (max-width: $lg-breakpoint) {
-	            max-width: 450px;
-	        }
-
-			@media screen and (max-width: $md-breakpoint) {
-				max-width: 350px;
-	            font-size: 45px;
-	        }
-		}
 	}
 
 	.careers {
@@ -113,43 +107,173 @@
 		}
 	}
 
-	.mobile {
+	.problem-solvers {
+		background: url(../img/background-3.png) no-repeat;
+		background-size: cover;
+		overflow-y: hidden;
+		max-height: 600px;
 
-		>h2 {
-			color: $gray;
+		img {
+			margin-top: 130px;
+		}
+
+		@media screen and (max-width: $xl-breakpoint) {
+	        max-height: 800px;
+	    }
+
+		@media screen and (max-width: $lg-breakpoint) {
+	        max-height: none;
+	    }
+	}
+
+	.areas-expertise {
+		background: $black;
+		display: flex;
+		flex-wrap: wrap;
+
+		>a {
+			align-items: center;
+			background: url(../img/home/food-and-beverage-box.png) no-repeat;
+			background-size: cover;
+			display: flex;
+			height: 250px;
+			justify-content: center;
+			text-decoration: none;
+			width: 33.3%;
+
+			&:nth-child(2) {
+				background: $brown;
+			}
+
+			&:nth-child(3) {
+				background: url(../img/home/cosmetics-box.png) no-repeat;
+				background-size: cover;
+			}
+
+			&:nth-child(4) {
+				background: url(../img/home/pharmaceutical-box.png) no-repeat;
+				background-size: cover;
+			}
+			&:nth-child(5) {
+				background: url(../img/home/distilleries-box.png) no-repeat;
+				background-size: cover;
+			}
+			&:nth-child(6) {
+				background: url(../img/home/electronics-box.png) no-repeat;
+				background-size: cover;
+			}
+
+			h3 {
+				color: $white;
+			}
+
+			&:hover {
+
+				h3 {
+					transform: scale(1.2);
+					transition: .3s all ease-out;
+				}
+
+			}
 		}
 	}
 
-	.video {
-		
-		a {
-			text-decoration: none;
-		}
+	.testimonial {
+		background: url(../img/background-3.png) no-repeat;
+		background-size: cover;
+
+
 		.container {
-
-			>img {
-				width: 100%;
-			}
-
-			.playbar {
+			>div {
+				flex-direction: column;
+				align-items: center;
 				display: flex;
-				margin-top: -57px;
+				justify-content: center;
+			}
+		}
 
-				.text {
-					background: rgba(255, 164, 47, .6);
-					display: flex;
-					align-items: center;
-					justify-content: flex-start;
-					color: $white;
-					font-size: 2em;
-					flex: 1 1 0;
-					padding-left: 30px;
+		.quote {
+
+			p {
+				font-size: 1.8em;
+				font-weight: 600;
+				text-transform: uppercase;
+				text-align: right;
+				width: 90%;
+
+				&:nth-child(2) {
+					font-size: 1.5em;
+					color: $brown;
+				}
+
+				span {
+					font-weight: 100;
+					font-style: italic;
 				}
 			}
 		}
 	}
 
-	.change {
-		margin-top: 100px;
+	.case-studies {
+
+		.grid {
+
+			>div {
+				background: url(../img/home/spirit-liquors-image.png) no-repeat;
+				background-size: cover;
+				background-position: center;
+				height: 250px;
+
+				&:nth-child(2) {
+					background: url(../img/home/jenny-cosmetics-image.png) no-repeat;
+					background-size: cover;
+					background-position: center;
+				}
+
+				&:nth-child(3) {
+					background: url(../img/home/boyd-rum-image.png) no-repeat;
+					background-size: cover;
+					background-position: center;
+				}
+
+				&:nth-child(4) {
+					background: url(../img/home/parigym-pharma-image.png) no-repeat;
+					background-size: cover;
+					background-position: center;
+				}
+			}
+		}
+
+		h2 {
+			background: $brown;
+			color: $white;
+			margin-bottom: 0;
+			padding: 50px 0;
+			width: 100%;
+		}
+
+		h3 {
+			background: none;
+			color: $white;
+			font-weight: 600;
+			line-height: 1.3em;
+			max-width: 150px;
+			text-shadow: #000 1px 0 10px;
+		}
+	}
+
+	.video {
+		background: url(../img/home/video-preview.png) no-repeat;
+		background-size: cover;
+		background-position: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 500px;
+		width: 100%;
+
+		@media screen and (max-width: $lg-breakpoint) {
+	        background-position: right;
+	    }
 	}
 }
