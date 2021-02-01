@@ -11,30 +11,6 @@
 		</div>
 	</section>
 
-	<section class="service-products">
-		<div class="grid three">
-			<div>
-				<?php
-		            $a = new Area('Product Box 1');
-		            $a->display($c);
-		        ?>
-		        	
-		    </div>
-			<div>
-				<?php
-		            $a = new Area('Product Box 2');
-		            $a->display($c);
-		        ?>
-		    </div>
-			<div>
-				<?php
-		            $a = new Area('Product Box 3');
-		            $a->display($c);
-		        ?>
-		        </div>
-		</div>
-	</section>
-
 	<section class="brown-bg contact">
 		<div class="container">
 			<?php

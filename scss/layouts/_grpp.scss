@@ -1,7 +1,9 @@
 .internal_wrapper {
 
 	.page-template-grpp,
-	.page-template-grpp-nohero {
+	.page-template-grpp-nohero,
+	.page-template-grpp-specs,
+	.page-template-grpp-about  {
 
 		.page-content {
 			//margin-top: 180px;
@@ -37,7 +39,7 @@
 			background: $off-black;
 			
 			.container {
-				padding: 30px;
+				padding: 0px;
 			}
 
 			h1,h2 {
@@ -88,9 +90,16 @@
 			h3 {
 				color: $white;
 				text-align: center;
-				font-size: 50px;
+				font-size: 30px;
 				font-weight: bold;
 				margin-bottom: 0;
+			}
+
+			&.contact {
+
+				h3 {
+					font-size: 50px;
+				}
 			}
 
 			.container {
@@ -127,6 +136,10 @@
 			background: url('../img/grpp/stripe-line-graphic.png') no-repeat;
 			background-size: 50%;
 
+			.container {
+				padding: 0;
+			}
+
 			.grid {
 
 				a {
@@ -138,13 +151,154 @@
 					font-weight: normal;
 					justify-content: center;
 					margin-right: 10px;
-					padding: 30px 0;
+					padding: 30px;
 					text-transform: none;
 					text-align: center;
 				}
 
 				@media screen and (max-width: $lg-breakpoint) {
 					margin-top: 0px;
+				}
+			}
+		}
+
+		.service-products {
+
+			.grid {
+				>div {
+					height: 380px;
+					background: url('../img/grpp/services-weather.png') no-repeat;
+					background-size: cover;
+					background-position: center;
+
+					&:nth-child(2) {
+						background: url('../img/grpp/services-fast-packs.png') no-repeat;
+						background-size: cover;
+					}
+
+					&:nth-child(3) {
+						background: url('../img/grpp/services-image-tri-wall.png') no-repeat;
+						background-size: cover;
+
+					}
+
+					h2 {
+						color: $white;
+						margin-bottom: 0;
+						text-align: center
+					}
+				}
+			}
+		}
+
+		.specifications {
+			background: url('../img/solutions/stripe-line-graphic.png') no-repeat $off-black;
+			background-position: right;
+			color: $white;
+
+			.container {
+				position: relative;
+
+				.table-container {
+					display: flex;
+					justify-content: space-around;
+					max-height: 0;
+					overflow: hidden;
+					width: 100%;
+
+					img {
+						margin: 0 40px;
+					}
+
+					&.open {
+						max-height: 1000px;
+					}
+				}
+
+				table {
+					display: block;
+					margin-left: 50px;
+
+					&.open {
+						display: block;
+					}
+				}
+			}
+
+			h1, h2, h3 {
+				border-bottom: 2px solid $white;
+				color: $white;
+				cursor: pointer;
+				text-align: left;
+				padding: 10px 0;
+				width: 100%;
+
+				i {
+					background: $white;
+					color: $table-gray;
+					padding: 6px;
+					position: absolute;
+					right: 50px;
+					transform: rotate(180deg);
+					transition: all .3s ease-out;
+					pointer-events: inherit;
+
+					&.open {
+						transform: rotate(0deg);
+					}
+				}
+			}
+
+
+
+			th {
+				background: $white;
+				color: $table-gray;
+				padding-left: 20px;
+			}
+
+			td {
+				padding-left: 20px;
+				background: $table-gray;
+			}
+		}
+
+		.custom-sizes {
+			
+			>div {
+				align-items: center;
+				box-shadow: 10px 10px 14px -5px rgba(0,0,0,0.75) inset;
+				-webkit-box-shadow: 10px 10px 14px -5px rgba(0,0,0,0.75) inset;
+				-moz-box-shadow: 10px 10px 14px -5px rgba(0,0,0,0.75) inset;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+
+				&:first-child {
+					background: url('../img/grpp/corrugated-sheets-image.png') no-repeat $off-black;
+					background-size: cover;
+					color: $white;
+
+					p {
+						text-align: center;
+						font-size: 50px;
+						line-height: 56px;
+						margin: 0px;
+						padding: 0;
+
+						&:nth-child(2) {
+							font-size: 46px;
+							font-weight: bold;
+						}
+
+						&:nth-child(3) {
+							font-size: 30px;
+						}
+					}
+				}
+
+				&:nth-child(2) {
+					align-items: flex-start;
 				}
 			}
 		}

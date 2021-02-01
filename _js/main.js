@@ -21,6 +21,14 @@ $( document ).ready(function() {
 		easing: 'ease-out'
 	});
 
+	// Code to open / close accordion specs
+
+	$('.specifications h3').click(function(e){
+		//alert('yeah');
+		$(this).find('.fas').toggleClass('open');
+		$(this).next('.table-container').toggleClass('open');
+	});
+
 
 	/*$('.scroller').slick({
         dots: true,

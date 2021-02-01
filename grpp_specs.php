@@ -11,28 +11,15 @@
 		</div>
 	</section>
 
-	<section class="service-products">
-		<div class="grid three">
-			<div>
-				<?php
-		            $a = new Area('Product Box 1');
-		            $a->display($c);
-		        ?>
-		        	
-		    </div>
-			<div>
-				<?php
-		            $a = new Area('Product Box 2');
-		            $a->display($c);
-		        ?>
-		    </div>
-			<div>
-				<?php
-		            $a = new Area('Product Box 3');
-		            $a->display($c);
-		        ?>
-		        </div>
+	<section class="specifications">
+
+		<div class="container column">
+			<?php
+	            $a = new Area('Specifications Content');
+	            $a->display($c);
+	        ?>
 		</div>
+		
 	</section>
 
 	<section class="brown-bg contact">
@@ -42,25 +29,22 @@
             $a->display($c);
         ?>
 		</div>
-		
 	</section>
-	<section class="gray-box">
+
+	<!-- <section class="gray-box">
 		<div class="container column">
 			<?php
             $a = new Area('Gray Box Text');
             $a->display($c);
         ?>
 		</div>
-		
-	</section>
+	</section>  -->
+
 	<section class="bottom-content">
-		<div class="container column">
 			<?php
 		        $a = new Area('Lower Page Content');
 		        $a->display($c);
 		    ?>
-		</div>
-
 	</section>
 	</div>
 
