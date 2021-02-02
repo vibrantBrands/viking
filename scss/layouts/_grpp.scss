@@ -5,10 +5,6 @@
 	.page-template-grpp-specs,
 	.page-template-grpp-about  {
 
-		.page-content {
-			//margin-top: 180px;
-		}
-
 		header {
 			.navigation{
 				padding: 20px 0;
@@ -60,17 +56,6 @@
 			background-size: cover;
 			background-position: center bottom;
 
-			/*.two-column {
-				>div {
-					&:first-child {
-						width: 60%;
-					}
-					&:nth-child(2) {
-						width: 40%;
-					}
-				}
-			}*/
-
 			.container {
 				h2 {
 					font-weight: 800;
@@ -87,37 +72,38 @@
 			background-size: cover;
 			padding: 50px 0;
 
-			h3 {
-				color: $white;
-				text-align: center;
-				font-size: 30px;
-				font-weight: bold;
-				margin-bottom: 0;
-			}
-
 			&.contact {
 
 				h3 {
+					color: $white;
 					font-size: 50px;
+
+					a {
+						color: $white;
+						font-size: 50px;
+					}
 				}
 			}
 
-			.container {
-				align-items: center;
-				justify-content: center;
 
-				.grid {
+			a {
 
-					>div {
-						display: flex;
-						flex-direction: column;
+				h3 {
+					color: $white;
+					text-align: center;
+					font-size: 30px;
+					font-weight: bold;
+					margin-bottom: 0;
+				}
 
-						@media screen and (max-width: $lg-breakpoint) {
-					        margin-top: 40px;
-					    }
-					}
+				>div {
+					text-align: center;
 
-					h3 {
+					@media screen and (max-width: $lg-breakpoint) {
+				        margin-top: 40px;
+				    }
+
+				    h3 {
 						color: $white;
 						margin: 20px 0 10px;
 						font-weight: 600;
@@ -127,8 +113,15 @@
 						color: $white;
 						text-transform: uppercase;
 						margin-top: 0;
+						text-align: center;
 					}
 				}
+			}
+
+
+			.container {
+				align-items: center;
+				justify-content: center;
 			}
 		}
 
@@ -192,14 +185,33 @@
 		}
 
 		.specifications {
-			background: url('../img/solutions/stripe-line-graphic.png') no-repeat $off-black;
-			background-position: right;
+			background: url('../img/grpp/stripe-line-graphic-brwn.png') no-repeat $off-black;
+			background-position: left;
 			color: $white;
+
+			@media screen and (max-width: $md-breakpoint) {
+				padding: 20px;
+			}
 
 			.container {
 				position: relative;
+				padding: 40px;
 
-				.table-container {
+				table {
+					display: block;
+					margin-left: 50px;
+
+					@media screen and (max-width: $md-breakpoint) {
+						margin-left: 0;
+					}
+
+					&.open {
+						display: block;
+					}
+				}
+			}
+
+			.table-container {
 					display: flex;
 					justify-content: space-around;
 					max-height: 0;
@@ -215,22 +227,21 @@
 					}
 				}
 
-				table {
-					display: block;
-					margin-left: 50px;
-
-					&.open {
-						display: block;
-					}
-				}
+			h2 {
+				color: $white;
+				font-size: 40px;
+				margin-top: 50px;
+				text-align: left;
+				width: 100%;
 			}
 
-			h1, h2, h3 {
+			h3 {
 				border-bottom: 2px solid $white;
 				color: $white;
 				cursor: pointer;
 				text-align: left;
 				padding: 10px 0;
+				position: relative;
 				width: 100%;
 
 				i {
@@ -238,7 +249,7 @@
 					color: $table-gray;
 					padding: 6px;
 					position: absolute;
-					right: 50px;
+					right: 0px;
 					transform: rotate(180deg);
 					transition: all .3s ease-out;
 					pointer-events: inherit;
@@ -247,19 +258,53 @@
 						transform: rotate(0deg);
 					}
 				}
+				@media screen and (max-width: $md-breakpoint) {
+					font-size: 1em;
+				}
 			}
-
-
 
 			th {
 				background: $white;
+				border-right: 1px solid black;
 				color: $table-gray;
 				padding-left: 20px;
 			}
 
 			td {
+				border-right: 1px solid black;
 				padding-left: 20px;
 				background: $table-gray;
+
+				@media screen and (max-width: $md-breakpoint) {
+					font-size: 12px;
+				}
+			}
+
+			&.light {
+				background: none;
+
+				h3 {
+					border-bottom: 2px solid $black;
+					color: $black;
+				}
+
+				i {
+					background: $table-gray;
+					color: $white;
+				}
+
+				th {
+					background: $table-gray;
+					border-right: 1px solid black;
+					color: $white;
+					padding-left: 20px;
+				}
+
+				td {
+					background: #c6c6c6;
+					border-right: 1px solid black;
+					color: $table-gray;
+				}
 			}
 		}
 
@@ -300,6 +345,18 @@
 				&:nth-child(2) {
 					align-items: flex-start;
 				}
+			}
+		}
+
+		.stone-bg {
+			background: url('../img/grpp/water-resistant-boxes-image.png') no-repeat $off-black;
+			color: $white;
+			
+			p {
+				text-align: center;
+				width: 100%;
+				text-transform: uppercase;
+				font-size: 2em;
 			}
 		}
 	}

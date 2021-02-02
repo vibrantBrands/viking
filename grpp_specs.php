@@ -22,6 +22,15 @@
 		
 	</section>
 
+	<section class="stone-bg">
+		<div class="container">
+			<?php
+            $a = new Area('Solutions Text');
+            $a->display($c);
+        ?>
+		</div>
+	</section>
+
 	<section class="brown-bg contact">
 		<div class="container">
 			<?php
@@ -45,6 +54,14 @@
 		        $a = new Area('Lower Page Content');
 		        $a->display($c);
 		    ?>
+	</section>
+	<section class="bottom-content">
+		<div class="container">
+			<?php
+		        $a = new Area('Centered Page Content');
+		        $a->display($c);
+		    ?>
+		</div>
 	</section>
 	</div>
 

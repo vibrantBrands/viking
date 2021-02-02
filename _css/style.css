@@ -5605,17 +5605,7 @@ footer {
 .internal_wrapper .page-template-grpp-about .maintext {
   background: url("../img/background-3.png") no-repeat;
   background-size: cover;
-  background-position: center bottom;
-  /*.two-column {
-				>div {
-					&:first-child {
-						width: 60%;
-					}
-					&:nth-child(2) {
-						width: 40%;
-					}
-				}
-			}*/ }
+  background-position: center bottom; }
   .internal_wrapper .page-template-grpp .maintext .container h2,
   .internal_wrapper .page-template-grpp-nohero .maintext .container h2,
   .internal_wrapper .page-template-grpp-specs .maintext .container h2,
@@ -5634,52 +5624,59 @@ footer {
   background: url("../img/solutions/contact-bg.jpg") no-repeat;
   background-size: cover;
   padding: 50px 0; }
-  .internal_wrapper .page-template-grpp .brown-bg h3,
-  .internal_wrapper .page-template-grpp-nohero .brown-bg h3,
-  .internal_wrapper .page-template-grpp-specs .brown-bg h3,
-  .internal_wrapper .page-template-grpp-about .brown-bg h3 {
+  .internal_wrapper .page-template-grpp .brown-bg.contact h3,
+  .internal_wrapper .page-template-grpp-nohero .brown-bg.contact h3,
+  .internal_wrapper .page-template-grpp-specs .brown-bg.contact h3,
+  .internal_wrapper .page-template-grpp-about .brown-bg.contact h3 {
+    color: #fff;
+    font-size: 50px; }
+    .internal_wrapper .page-template-grpp .brown-bg.contact h3 a,
+    .internal_wrapper .page-template-grpp-nohero .brown-bg.contact h3 a,
+    .internal_wrapper .page-template-grpp-specs .brown-bg.contact h3 a,
+    .internal_wrapper .page-template-grpp-about .brown-bg.contact h3 a {
+      color: #fff;
+      font-size: 50px; }
+  .internal_wrapper .page-template-grpp .brown-bg a h3,
+  .internal_wrapper .page-template-grpp-nohero .brown-bg a h3,
+  .internal_wrapper .page-template-grpp-specs .brown-bg a h3,
+  .internal_wrapper .page-template-grpp-about .brown-bg a h3 {
     color: #fff;
     text-align: center;
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 0; }
-  .internal_wrapper .page-template-grpp .brown-bg.contact h3,
-  .internal_wrapper .page-template-grpp-nohero .brown-bg.contact h3,
-  .internal_wrapper .page-template-grpp-specs .brown-bg.contact h3,
-  .internal_wrapper .page-template-grpp-about .brown-bg.contact h3 {
-    font-size: 50px; }
+  .internal_wrapper .page-template-grpp .brown-bg a > div,
+  .internal_wrapper .page-template-grpp-nohero .brown-bg a > div,
+  .internal_wrapper .page-template-grpp-specs .brown-bg a > div,
+  .internal_wrapper .page-template-grpp-about .brown-bg a > div {
+    text-align: center; }
+    @media screen and (max-width: 992px) {
+      .internal_wrapper .page-template-grpp .brown-bg a > div,
+      .internal_wrapper .page-template-grpp-nohero .brown-bg a > div,
+      .internal_wrapper .page-template-grpp-specs .brown-bg a > div,
+      .internal_wrapper .page-template-grpp-about .brown-bg a > div {
+        margin-top: 40px; } }
+    .internal_wrapper .page-template-grpp .brown-bg a > div h3,
+    .internal_wrapper .page-template-grpp-nohero .brown-bg a > div h3,
+    .internal_wrapper .page-template-grpp-specs .brown-bg a > div h3,
+    .internal_wrapper .page-template-grpp-about .brown-bg a > div h3 {
+      color: #fff;
+      margin: 20px 0 10px;
+      font-weight: 600; }
+    .internal_wrapper .page-template-grpp .brown-bg a > div p,
+    .internal_wrapper .page-template-grpp-nohero .brown-bg a > div p,
+    .internal_wrapper .page-template-grpp-specs .brown-bg a > div p,
+    .internal_wrapper .page-template-grpp-about .brown-bg a > div p {
+      color: #fff;
+      text-transform: uppercase;
+      margin-top: 0;
+      text-align: center; }
   .internal_wrapper .page-template-grpp .brown-bg .container,
   .internal_wrapper .page-template-grpp-nohero .brown-bg .container,
   .internal_wrapper .page-template-grpp-specs .brown-bg .container,
   .internal_wrapper .page-template-grpp-about .brown-bg .container {
     align-items: center;
     justify-content: center; }
-    .internal_wrapper .page-template-grpp .brown-bg .container .grid > div,
-    .internal_wrapper .page-template-grpp-nohero .brown-bg .container .grid > div,
-    .internal_wrapper .page-template-grpp-specs .brown-bg .container .grid > div,
-    .internal_wrapper .page-template-grpp-about .brown-bg .container .grid > div {
-      display: flex;
-      flex-direction: column; }
-      @media screen and (max-width: 992px) {
-        .internal_wrapper .page-template-grpp .brown-bg .container .grid > div,
-        .internal_wrapper .page-template-grpp-nohero .brown-bg .container .grid > div,
-        .internal_wrapper .page-template-grpp-specs .brown-bg .container .grid > div,
-        .internal_wrapper .page-template-grpp-about .brown-bg .container .grid > div {
-          margin-top: 40px; } }
-    .internal_wrapper .page-template-grpp .brown-bg .container .grid h3,
-    .internal_wrapper .page-template-grpp-nohero .brown-bg .container .grid h3,
-    .internal_wrapper .page-template-grpp-specs .brown-bg .container .grid h3,
-    .internal_wrapper .page-template-grpp-about .brown-bg .container .grid h3 {
-      color: #fff;
-      margin: 20px 0 10px;
-      font-weight: 600; }
-    .internal_wrapper .page-template-grpp .brown-bg .container .grid p,
-    .internal_wrapper .page-template-grpp-nohero .brown-bg .container .grid p,
-    .internal_wrapper .page-template-grpp-specs .brown-bg .container .grid p,
-    .internal_wrapper .page-template-grpp-about .brown-bg .container .grid p {
-      color: #fff;
-      text-transform: uppercase;
-      margin-top: 0; }
 
 .internal_wrapper .page-template-grpp .bottom-content,
 .internal_wrapper .page-template-grpp-nohero .bottom-content,
@@ -5746,104 +5743,155 @@ footer {
 .internal_wrapper .page-template-grpp-nohero .specifications,
 .internal_wrapper .page-template-grpp-specs .specifications,
 .internal_wrapper .page-template-grpp-about .specifications {
-  background: url("../img/solutions/stripe-line-graphic.png") no-repeat #1A1A1A;
-  background-position: right;
+  background: url("../img/grpp/stripe-line-graphic-brwn.png") no-repeat #1A1A1A;
+  background-position: left;
   color: #fff; }
+  @media screen and (max-width: 768px) {
+    .internal_wrapper .page-template-grpp .specifications,
+    .internal_wrapper .page-template-grpp-nohero .specifications,
+    .internal_wrapper .page-template-grpp-specs .specifications,
+    .internal_wrapper .page-template-grpp-about .specifications {
+      padding: 20px; } }
   .internal_wrapper .page-template-grpp .specifications .container,
   .internal_wrapper .page-template-grpp-nohero .specifications .container,
   .internal_wrapper .page-template-grpp-specs .specifications .container,
   .internal_wrapper .page-template-grpp-about .specifications .container {
-    position: relative; }
-    .internal_wrapper .page-template-grpp .specifications .container .table-container,
-    .internal_wrapper .page-template-grpp-nohero .specifications .container .table-container,
-    .internal_wrapper .page-template-grpp-specs .specifications .container .table-container,
-    .internal_wrapper .page-template-grpp-about .specifications .container .table-container {
-      display: flex;
-      justify-content: space-around;
-      max-height: 0;
-      overflow: hidden;
-      width: 100%; }
-      .internal_wrapper .page-template-grpp .specifications .container .table-container img,
-      .internal_wrapper .page-template-grpp-nohero .specifications .container .table-container img,
-      .internal_wrapper .page-template-grpp-specs .specifications .container .table-container img,
-      .internal_wrapper .page-template-grpp-about .specifications .container .table-container img {
-        margin: 0 40px; }
-      .internal_wrapper .page-template-grpp .specifications .container .table-container.open,
-      .internal_wrapper .page-template-grpp-nohero .specifications .container .table-container.open,
-      .internal_wrapper .page-template-grpp-specs .specifications .container .table-container.open,
-      .internal_wrapper .page-template-grpp-about .specifications .container .table-container.open {
-        max-height: 1000px; }
+    position: relative;
+    padding: 40px; }
     .internal_wrapper .page-template-grpp .specifications .container table,
     .internal_wrapper .page-template-grpp-nohero .specifications .container table,
     .internal_wrapper .page-template-grpp-specs .specifications .container table,
     .internal_wrapper .page-template-grpp-about .specifications .container table {
       display: block;
       margin-left: 50px; }
+      @media screen and (max-width: 768px) {
+        .internal_wrapper .page-template-grpp .specifications .container table,
+        .internal_wrapper .page-template-grpp-nohero .specifications .container table,
+        .internal_wrapper .page-template-grpp-specs .specifications .container table,
+        .internal_wrapper .page-template-grpp-about .specifications .container table {
+          margin-left: 0; } }
       .internal_wrapper .page-template-grpp .specifications .container table.open,
       .internal_wrapper .page-template-grpp-nohero .specifications .container table.open,
       .internal_wrapper .page-template-grpp-specs .specifications .container table.open,
       .internal_wrapper .page-template-grpp-about .specifications .container table.open {
         display: block; }
-  .internal_wrapper .page-template-grpp .specifications h1, .internal_wrapper .page-template-grpp .specifications h2, .internal_wrapper .page-template-grpp .specifications h3,
-  .internal_wrapper .page-template-grpp-nohero .specifications h1,
+  .internal_wrapper .page-template-grpp .specifications .table-container,
+  .internal_wrapper .page-template-grpp-nohero .specifications .table-container,
+  .internal_wrapper .page-template-grpp-specs .specifications .table-container,
+  .internal_wrapper .page-template-grpp-about .specifications .table-container {
+    display: flex;
+    justify-content: space-around;
+    max-height: 0;
+    overflow: hidden;
+    width: 100%; }
+    .internal_wrapper .page-template-grpp .specifications .table-container img,
+    .internal_wrapper .page-template-grpp-nohero .specifications .table-container img,
+    .internal_wrapper .page-template-grpp-specs .specifications .table-container img,
+    .internal_wrapper .page-template-grpp-about .specifications .table-container img {
+      margin: 0 40px; }
+    .internal_wrapper .page-template-grpp .specifications .table-container.open,
+    .internal_wrapper .page-template-grpp-nohero .specifications .table-container.open,
+    .internal_wrapper .page-template-grpp-specs .specifications .table-container.open,
+    .internal_wrapper .page-template-grpp-about .specifications .table-container.open {
+      max-height: 1000px; }
+  .internal_wrapper .page-template-grpp .specifications h2,
   .internal_wrapper .page-template-grpp-nohero .specifications h2,
-  .internal_wrapper .page-template-grpp-nohero .specifications h3,
-  .internal_wrapper .page-template-grpp-specs .specifications h1,
   .internal_wrapper .page-template-grpp-specs .specifications h2,
+  .internal_wrapper .page-template-grpp-about .specifications h2 {
+    color: #fff;
+    font-size: 40px;
+    margin-top: 50px;
+    text-align: left;
+    width: 100%; }
+  .internal_wrapper .page-template-grpp .specifications h3,
+  .internal_wrapper .page-template-grpp-nohero .specifications h3,
   .internal_wrapper .page-template-grpp-specs .specifications h3,
-  .internal_wrapper .page-template-grpp-about .specifications h1,
-  .internal_wrapper .page-template-grpp-about .specifications h2,
   .internal_wrapper .page-template-grpp-about .specifications h3 {
     border-bottom: 2px solid #fff;
     color: #fff;
     cursor: pointer;
     text-align: left;
     padding: 10px 0;
+    position: relative;
     width: 100%; }
-    .internal_wrapper .page-template-grpp .specifications h1 i, .internal_wrapper .page-template-grpp .specifications h2 i, .internal_wrapper .page-template-grpp .specifications h3 i,
-    .internal_wrapper .page-template-grpp-nohero .specifications h1 i,
-    .internal_wrapper .page-template-grpp-nohero .specifications h2 i,
+    .internal_wrapper .page-template-grpp .specifications h3 i,
     .internal_wrapper .page-template-grpp-nohero .specifications h3 i,
-    .internal_wrapper .page-template-grpp-specs .specifications h1 i,
-    .internal_wrapper .page-template-grpp-specs .specifications h2 i,
     .internal_wrapper .page-template-grpp-specs .specifications h3 i,
-    .internal_wrapper .page-template-grpp-about .specifications h1 i,
-    .internal_wrapper .page-template-grpp-about .specifications h2 i,
     .internal_wrapper .page-template-grpp-about .specifications h3 i {
       background: #fff;
       color: #444444;
       padding: 6px;
       position: absolute;
-      right: 50px;
+      right: 0px;
       -webkit-transform: rotate(180deg);
               transform: rotate(180deg);
       transition: all .3s ease-out;
       pointer-events: inherit; }
-      .internal_wrapper .page-template-grpp .specifications h1 i.open, .internal_wrapper .page-template-grpp .specifications h2 i.open, .internal_wrapper .page-template-grpp .specifications h3 i.open,
-      .internal_wrapper .page-template-grpp-nohero .specifications h1 i.open,
-      .internal_wrapper .page-template-grpp-nohero .specifications h2 i.open,
+      .internal_wrapper .page-template-grpp .specifications h3 i.open,
       .internal_wrapper .page-template-grpp-nohero .specifications h3 i.open,
-      .internal_wrapper .page-template-grpp-specs .specifications h1 i.open,
-      .internal_wrapper .page-template-grpp-specs .specifications h2 i.open,
       .internal_wrapper .page-template-grpp-specs .specifications h3 i.open,
-      .internal_wrapper .page-template-grpp-about .specifications h1 i.open,
-      .internal_wrapper .page-template-grpp-about .specifications h2 i.open,
       .internal_wrapper .page-template-grpp-about .specifications h3 i.open {
         -webkit-transform: rotate(0deg);
                 transform: rotate(0deg); }
+    @media screen and (max-width: 768px) {
+      .internal_wrapper .page-template-grpp .specifications h3,
+      .internal_wrapper .page-template-grpp-nohero .specifications h3,
+      .internal_wrapper .page-template-grpp-specs .specifications h3,
+      .internal_wrapper .page-template-grpp-about .specifications h3 {
+        font-size: 1em; } }
   .internal_wrapper .page-template-grpp .specifications th,
   .internal_wrapper .page-template-grpp-nohero .specifications th,
   .internal_wrapper .page-template-grpp-specs .specifications th,
   .internal_wrapper .page-template-grpp-about .specifications th {
     background: #fff;
+    border-right: 1px solid black;
     color: #444444;
     padding-left: 20px; }
   .internal_wrapper .page-template-grpp .specifications td,
   .internal_wrapper .page-template-grpp-nohero .specifications td,
   .internal_wrapper .page-template-grpp-specs .specifications td,
   .internal_wrapper .page-template-grpp-about .specifications td {
+    border-right: 1px solid black;
     padding-left: 20px;
     background: #444444; }
+    @media screen and (max-width: 768px) {
+      .internal_wrapper .page-template-grpp .specifications td,
+      .internal_wrapper .page-template-grpp-nohero .specifications td,
+      .internal_wrapper .page-template-grpp-specs .specifications td,
+      .internal_wrapper .page-template-grpp-about .specifications td {
+        font-size: 12px; } }
+  .internal_wrapper .page-template-grpp .specifications.light,
+  .internal_wrapper .page-template-grpp-nohero .specifications.light,
+  .internal_wrapper .page-template-grpp-specs .specifications.light,
+  .internal_wrapper .page-template-grpp-about .specifications.light {
+    background: none; }
+    .internal_wrapper .page-template-grpp .specifications.light h3,
+    .internal_wrapper .page-template-grpp-nohero .specifications.light h3,
+    .internal_wrapper .page-template-grpp-specs .specifications.light h3,
+    .internal_wrapper .page-template-grpp-about .specifications.light h3 {
+      border-bottom: 2px solid #000;
+      color: #000; }
+    .internal_wrapper .page-template-grpp .specifications.light i,
+    .internal_wrapper .page-template-grpp-nohero .specifications.light i,
+    .internal_wrapper .page-template-grpp-specs .specifications.light i,
+    .internal_wrapper .page-template-grpp-about .specifications.light i {
+      background: #444444;
+      color: #fff; }
+    .internal_wrapper .page-template-grpp .specifications.light th,
+    .internal_wrapper .page-template-grpp-nohero .specifications.light th,
+    .internal_wrapper .page-template-grpp-specs .specifications.light th,
+    .internal_wrapper .page-template-grpp-about .specifications.light th {
+      background: #444444;
+      border-right: 1px solid black;
+      color: #fff;
+      padding-left: 20px; }
+    .internal_wrapper .page-template-grpp .specifications.light td,
+    .internal_wrapper .page-template-grpp-nohero .specifications.light td,
+    .internal_wrapper .page-template-grpp-specs .specifications.light td,
+    .internal_wrapper .page-template-grpp-about .specifications.light td {
+      background: #c6c6c6;
+      border-right: 1px solid black;
+      color: #444444; }
 
 .internal_wrapper .page-template-grpp .custom-sizes > div,
 .internal_wrapper .page-template-grpp-nohero .custom-sizes > div,
@@ -5888,6 +5936,21 @@ footer {
   .internal_wrapper .page-template-grpp-specs .custom-sizes > div:nth-child(2),
   .internal_wrapper .page-template-grpp-about .custom-sizes > div:nth-child(2) {
     align-items: flex-start; }
+
+.internal_wrapper .page-template-grpp .stone-bg,
+.internal_wrapper .page-template-grpp-nohero .stone-bg,
+.internal_wrapper .page-template-grpp-specs .stone-bg,
+.internal_wrapper .page-template-grpp-about .stone-bg {
+  background: url("../img/grpp/water-resistant-boxes-image.png") no-repeat #1A1A1A;
+  color: #fff; }
+  .internal_wrapper .page-template-grpp .stone-bg p,
+  .internal_wrapper .page-template-grpp-nohero .stone-bg p,
+  .internal_wrapper .page-template-grpp-specs .stone-bg p,
+  .internal_wrapper .page-template-grpp-about .stone-bg p {
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 2em; }
 
 /* ==========================================================================
    Print styles.

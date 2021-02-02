@@ -21,7 +21,7 @@ $displayThirdColumn = $blocks > 0 || $c->isEditMode();
       </div>
 
       <div class="logo">
-        <a href="/grpp-home">
+        <a href="/swatek-home">
         <img src="<?php echo $this->getThemePath(); ?>/img/grpp/grpp-logo.png" alt="logo" class="logo">
         </a>
       </div>
